@@ -6,7 +6,7 @@ st.set_page_config(page_title="MotoValue | Used Bike Price Predictor", page_icon
 
 @st.cache_resource
 def load_bundle():
-     if not os.path.exists("bike_price_model.pkl"):
+    if not os.path.exists("bike_price_model.pkl"):
         subprocess.run(
             [sys.executable, "train_model.py"],
             check=True
